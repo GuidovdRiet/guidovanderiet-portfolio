@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Logo from './Logo';
 
 // Social icons
-import Codepen from './social-icons/Codepen';
-import Github from './social-icons/Github';
-import LinkedIn from './social-icons/LinkedIn';
-import Twitter from './social-icons/Twitter';
+import Codepen from '../Icons/social-icons/Codepen';
+import Github from '../Icons/social-icons/Github';
+import LinkedIn from '../Icons/social-icons/LinkedIn';
+import Twitter from '../Icons/social-icons/Twitter';
 
 class Navigation extends Component {
     render() {
