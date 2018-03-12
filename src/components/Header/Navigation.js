@@ -1,22 +1,54 @@
 import React, { Component } from 'react';
-import Logo from './Logo';
+import styled from 'styled-components';
 
-// Social icons
-import Codepen from '../Icons/social-icons/Codepen';
-import Github from '../Icons/social-icons/Github';
-import LinkedIn from '../Icons/social-icons/LinkedIn';
-import Twitter from '../Icons/social-icons/Twitter';
+const Nav = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 33px 0 33px;    
+`
+
+const SocialIconWrapper = styled.ul`
+    list-style: none;
+    display: flex;
+    width: 115px;
+    align-items: center;
+    justify-content: space-between;
+`
+
+const Icon = styled.li`
+    > * {
+        fill: #C7C7C7;
+    }
+`
+
+// Icons
+import Logo from './Logo';
+import Codepen from '../images/icons/social-icons/Codepen';
+import Github from '../images/icons/social-icons/Github';
+import LinkedIn from '../images/icons/social-icons/LinkedIn';
+import Twitter from '../images/icons/social-icons/Twitter';
 
 class Navigation extends Component {
     render() {
         return (
-            <div>
+            <Nav>
                 <Logo />
-                <Codepen />
-                <Github />
-                <Twitter />
-                <LinkedIn />
-            </div>
+                <SocialIconWrapper>
+                    <Icon>
+                        <Github />
+                    </Icon>
+                    <Icon>
+                        <Codepen />
+                    </Icon>
+                    <Icon>
+                        <Twitter />
+                    </Icon>
+                    <Icon>
+                        <LinkedIn />
+                    </Icon>
+                </SocialIconWrapper>
+            </Nav>
         )
     }
 }

@@ -9,6 +9,7 @@ import Navigation from "../components/Header/Navigation";
 injectGlobal`
     * {
         box-sizing: border-box;
+        font-family: 'karla';
     }
     body {
         margin: 0;
@@ -18,30 +19,34 @@ injectGlobal`
         //-webkit-text-stroke-width: .05px;
         //-webkit-text-stroke-color: white;
         -webkit-font-smoothing: antialiased;
-        font-family: 'source sans pro';
     }
     a {
         text-decoration: none;
     }
+    ul {
+      padding: 0;
+    }
     h1 {
-        font-size: 3.2em;
-        font-family: 'source sans pro';
+        font-size: 3.9em;
+        font-weight: 700;
         margin-bottom: 10px;
     }
     h2 {
-        font-family: 'source sans pro';
         font-size: 2.2em;
         margin-top: 8px;
     }
     p {
         font-size: 1.45em;
-        font-family: 'source sans pro';
     }
 `;
 
 const theme = {
-  colorMain: "#1054F5",
-  colorWhite: "#fff"
+  colorMain: '#061616',
+  colorSecundary: '#5F75DD',
+  colorWhite: '#fff',
+  colorLightGray: '#C7C7C7',
+  colorMediumGray: '#323333',
+  colorDarkGray: '#181E1E',
 };
 
 const TemplateWrapper = ({ children }) => (
@@ -53,7 +58,6 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
     />
-    <Navigation />
     <ThemeProvider theme={theme}>
       <div>{children()}</div>
     </ThemeProvider>
