@@ -17,7 +17,7 @@ const Head = styled.header`
 const ContentWrapper = styled.div`
   flex: 1;
   display: flex;
-  margin: 70px 150px 0 150px;
+  margin: 70px 10% 0 10%;
 `;
 
 const Content = styled.div`
@@ -29,7 +29,8 @@ const Content = styled.div`
 const ContentTop = styled.div`
   & > h1 {
     color: ${props => props.theme.colorWhite};
-    margin: 0 0 30px 0;
+    margin: 0 0 30px -6px;
+    font-size: 3.4em;
   }
 `;
 
@@ -37,16 +38,18 @@ const ContentBottom = styled.div`
   display: flex;
   text-align: justify;
   & > p {
-    margin-right: 90px;
+    margin-right: 40px;
     width: 290px;
     color: ${props => props.theme.colorLightGray};
+    font-size: 1.3em;
+    line-height: 23px;
   }
 `;
 
 const ArrowContainer = styled.div`
   display: flex;
   align-items: flex-end;
-  margin-right: 95px;
+  margin-right: 140px;
 `;
 
 const HeaderTriangle = styled.div`
