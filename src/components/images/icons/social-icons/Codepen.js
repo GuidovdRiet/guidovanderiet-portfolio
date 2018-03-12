@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const CodepenIcon = styled.svg`
-  width: 14px;
+  width: 15px;
 `;
 
 const Codepen = () => (

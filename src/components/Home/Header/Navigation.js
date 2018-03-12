@@ -5,7 +5,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 33px 0 33px;    
+    padding: 40px 80px 0 80px;    
 `
 
 const SocialIconWrapper = styled.ul`
@@ -24,10 +24,10 @@ const Icon = styled.li`
 
 // Icons
 import Logo from './Logo';
-import Codepen from '../images/icons/social-icons/Codepen';
-import Github from '../images/icons/social-icons/Github';
-import LinkedIn from '../images/icons/social-icons/LinkedIn';
-import Twitter from '../images/icons/social-icons/Twitter';
+import Codepen from '../../images/icons/social-icons/Codepen';
+import Github from '../../images/icons/social-icons/Github';
+import LinkedIn from '../../images/icons/social-icons/LinkedIn';
+import Twitter from '../../images/icons/social-icons/Twitter';
 
 class Navigation extends Component {
     render() {

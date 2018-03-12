@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const GitHubIcon = styled.svg`
-  width: 17px;
+  width: 19px;
 `;
 
 const Github = () => (

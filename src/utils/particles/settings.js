@@ -26,7 +26,7 @@ const settings = {
       }
     },
     opacity: {
-      value: 0.3,
+      value: 0.7,
       random: false,
       anim: {
         enable: false,
@@ -36,7 +36,7 @@ const settings = {
       }
     },
     size: {
-      value: 2,
+      value: 1,
       random: true,
       anim: {
         enable: false,
@@ -54,7 +54,7 @@ const settings = {
     },
     move: {
       enable: true,
-      speed: 3,
+      speed: 1,
       direction: "none",
       random: true,
       straight: false,
@@ -90,7 +90,7 @@ const settings = {
         distance: 400,
         size: 40,
         duration: 2,
-        opacity: 8,
+        opacity: 4,
         speed: 1
       },
       repulse: {

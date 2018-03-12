@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const LinkedInIcon = styled.svg`
-  width: 17px;
+  width: 15px;
 `;
 
 const LinkedIn = () => (

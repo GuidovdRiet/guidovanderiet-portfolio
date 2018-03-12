@@ -5,23 +5,28 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 // Icons
-import Arrow from "../images/icons/Arrow.js";
-import background from "../images/header-background.svg";
+import Arrow from "../../images/icons/Arrow.js";
+import background from "../../images/header-background.svg";
 
 // particles
-import { particleInstance, particleSettings } from "../../utils/particles/";
+import { particleInstance, particleSettings } from "../../../utils/particles/";
 
 const Head = styled.header`
   background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover; 
   background-position: bottom;
   width: 100%;
   height: 85vh;
+  max-height: 800px;
 `;
 
 const Canvas = styled.canvas`
   width: 100%;
-  height: 90%;
-  z-index: 0;
+  max-height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 
 const ContentWrapper = styled.div`
@@ -62,13 +67,6 @@ const ArrowContainer = styled.div`
   margin-right: 140px;
 `;
 
-const HeaderTriangle = styled.div`
-  width: 100%;
-  height: 0;
-  border-top: 100px solid #071616;
-  border-right: 1000px solid transparent;
-`;
-
 class Header extends Component {
   componentDidMount() {
     const node = findDOMNode(this.canvas);
@@ -78,10 +76,8 @@ class Header extends Component {
   render() {
     return (
       <Head>
-        <Canvas ref={canvas => (this.canvas = canvas)}> 
           <Navigation />
           <ContentWrapper>
-          
             <Content>
               <ContentTop>
                 <h1>Who, What, Where?</h1>
@@ -101,7 +97,7 @@ class Header extends Component {
               </ContentBottom>
             </Content>
           </ContentWrapper>
-        </Canvas> 
+          <Canvas ref={canvas => (this.canvas = canvas)}></Canvas>            
       </Head>
     );
   }
