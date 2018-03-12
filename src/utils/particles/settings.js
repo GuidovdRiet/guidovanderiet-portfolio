@@ -8,7 +8,7 @@ const settings = {
       }
     },
     color: {
-      value: "#ffffff"
+      value: "#5f75dd"
     },
     shape: {
       type: "circle",
@@ -26,7 +26,7 @@ const settings = {
       }
     },
     opacity: {
-      value: 0.5,
+      value: 0.3,
       random: false,
       anim: {
         enable: false,
@@ -36,7 +36,7 @@ const settings = {
       }
     },
     size: {
-      value: 5,
+      value: 2,
       random: true,
       anim: {
         enable: false,
@@ -46,7 +46,7 @@ const settings = {
       }
     },
     line_linked: {
-      enable: true,
+      enable: false,
       distance: 150,
       color: "#ffffff",
       opacity: 0.4,
@@ -54,13 +54,13 @@ const settings = {
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 3,
       direction: "none",
-      random: false,
+      random: true,
       straight: false,
       out_mode: "out",
       attract: {
-        enable: false,
+        enable: true,
         rotateX: 600,
         rotateY: 1200
       }
@@ -91,7 +91,7 @@ const settings = {
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3
+        speed: 1
       },
       repulse: {
         distance: 200

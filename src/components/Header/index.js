@@ -20,7 +20,7 @@ const Head = styled.header`
 
 const Canvas = styled.canvas`
   width: 100%;
-  height: 100%;
+  height: 90%;
   z-index: 0;
 `;
 
