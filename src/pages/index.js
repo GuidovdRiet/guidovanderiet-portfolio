@@ -13,8 +13,8 @@ const ContentContainer = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  width: 80%;
-  max-width: 2050px;
+  width: 82%;
+  max-width: 2052px;
 `;
 
 

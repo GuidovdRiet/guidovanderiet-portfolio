@@ -45,7 +45,6 @@ const ContentTop = styled.div`
   & > h1 {
     color: ${props => props.theme.colorWhite};
     margin: 0 0 30px -6px;
-    font-size: 3.4em;
   }
 `;
 

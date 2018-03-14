@@ -3,16 +3,39 @@ import styled from 'styled-components';
 
 const Card = styled.div`
     box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.1);
-    margin-left: 40px;
     background: ${props => props.theme.colorWhite};
+    width: 22%;
+    @media (max-width: 1100px) {
+      width: 45%;
+      margin-bottom: 60px;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
     &:first-child {
         margin-left: 0px;
     }
 `;
 
-const CardImage = styled.img``;
-const CardTitle = styled.h3``;
-const CardText = styled.p``;
+const CardImage = styled.img`
+    width: 100%;
+    height: 200px;
+    background: url('https://source.unsplash.com/category/buildings/200x150/');
+    background-repeat: no-repeat;
+    background-size: cover;
+`;
+
+const CardTitle = styled.h3`
+    
+`;
+
+const CardText = styled.p`
+
+`;
+
+const CardLogo = styled.img`
+
+`;
 
 class WorkCard extends Component {
   render() {
@@ -26,6 +49,7 @@ class WorkCard extends Component {
           vulputate felis, et sollicitudin purus pharetra vitae. Vivamus
           lobortis felis a sapien vestibulum euismod.
         </CardText>
+        <CardLogo></CardLogo>
       </Card>
     )
   }

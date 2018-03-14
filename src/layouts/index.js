@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { themeProvider, ThemeProvider } from "styled-components";
 import { injectGlobal } from "styled-components";
 
-import Navigation from "../components/Header/Navigation";
+import Navigation from "../components/Home/Header/Navigation";
 
 injectGlobal`
     * {
@@ -27,7 +27,7 @@ injectGlobal`
       padding: 0;
     }
     h1 {
-        font-size: 3.9em;
+        font-size: 3.4em;
         font-weight: 700;
         margin-bottom: 10px;
     }
