@@ -7,6 +7,7 @@ const Nav = styled.nav`
   padding: 30px 30px 0 30px;
   transition: position 0.3s ease-in-out;
   width: 100%;
+  z-index: 9999;
   &.active {
     background: rgba(0, 0, 0, 0.9);
     top: 0;

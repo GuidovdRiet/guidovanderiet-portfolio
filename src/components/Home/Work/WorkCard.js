@@ -1,10 +1,19 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
 
+// Icons
+import BuildingsOfRdamIcon from '../../images/icons/work-card-icons/plus_icon.svg';
+import BuildingsOfRdamLogo from '../../images/icons/project-logos/buildings-of-rotterdam-logo.svg';
+
 const Card = styled.div`
     box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.1);
     background: ${props => props.theme.colorWhite};
     width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+    padding-bottom: 50px;
     @media (max-width: 1100px) {
       width: 45%;
       margin-bottom: 60px;
@@ -17,24 +26,42 @@ const Card = styled.div`
     }
 `;
 
+const CardTextWrapper = styled.div`
+    width: 74%;
+`;
+
 const CardImage = styled.img`
     width: 100%;
     height: 200px;
-    background: url('https://source.unsplash.com/category/buildings/200x150/');
+    background: linear-gradient(rgba(95, 117, 221, 0.9), rgba(95, 117, 221, 0.9)), url(${BuildingsOfRdamIcon});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    color: ${props => props.theme.colorMain};
 `;
 
 const CardTitle = styled.h3`
-    
+    margin-top: 25px;
 `;
 
 const CardText = styled.p`
-
+    color: ${props => props.theme.colorLightGray};
+    line-height: 20px;
+    text-align: justify;
 `;
 
-const CardLogo = styled.img`
+const CardLogoWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+`;
 
+const CardLogo = styled.div`
+    width: 45px;
+    height: 25px;
+    background: url(${BuildingsOfRdamLogo});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 `;
 
 class WorkCard extends Component {
@@ -42,14 +69,18 @@ class WorkCard extends Component {
     return (
       <Card>
         <CardImage />
-        <CardTitle>Buildings of Rotterdam</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec
-          orci dignissim, auctor arcu sit amet, condimentum ipsum. Donec finibus
-          vulputate felis, et sollicitudin purus pharetra vitae. Vivamus
-          lobortis felis a sapien vestibulum euismod.
-        </CardText>
-        <CardLogo></CardLogo>
+        <CardTextWrapper>
+          <CardTitle>Buildings of Rotterdam</CardTitle>
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec
+            orci dignissim, auctor arcu sit amet, condimentum ipsum. Donec finibus
+            vulputate felis, et sollicitudin purus pharetra vitae. Vivamus
+            lobortis felis a sapien vestibulum euismod.
+          </CardText>
+          <CardLogoWrapper>
+            <CardLogo></CardLogo>
+          </CardLogoWrapper>
+        </CardTextWrapper>
       </Card>
     )
   }

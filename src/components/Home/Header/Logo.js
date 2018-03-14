@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const BrandWrapper = styled.div`
+  transition: all .3s cubic-bezier(.25,.75,.5,1.25);
   & > * {
     color: ${props => props.theme.colorMediumGray};
     font-size: 1.5em;
     border: 1px solid ${props => props.theme.colorMediumGray};
     margin-bottom: 9px;
   }
-  transition: all .3s cubic-bezier(.25,.75,.5,1.25);
   &.active {
+      transform: translate3d(100px, 0, 0);
       display: flex;
       margin-top: -20px;
-      transform: translate3d(100px, 0, 0);
   }
 `;
 

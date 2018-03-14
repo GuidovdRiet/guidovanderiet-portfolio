@@ -42,7 +42,7 @@ injectGlobal`
 
 const theme = {
   colorMain: '#061616',
-  colorSecundary: '#5F75DD',
+  colorSecundary: 'rgb(95, 117, 221)',
   colorWhite: '#fff',
   colorLightGray: '#C7C7C7',
   colorMediumGray: '#323333',
