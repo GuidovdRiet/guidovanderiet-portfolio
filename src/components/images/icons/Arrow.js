@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 
 const ArrowIcon = styled.svg`
-  fill: ${props => props.theme.colorWhite};
+  fill: ${props => props.theme.colorLightGray};
 `
 
 const Arrow = () => (

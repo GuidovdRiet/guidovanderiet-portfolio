@@ -32,6 +32,7 @@ const Canvas = styled.canvas`
 const ContentWrapper = styled.div`
   flex: 1;
   display: flex;
+  justify-content: center;
   margin: 70px 10% 0 10%;
 `;
 
@@ -63,7 +64,6 @@ const ContentBottom = styled.div`
 const ArrowContainer = styled.div`
   display: flex;
   align-items: flex-end;
-  margin-right: 140px;
 `;
 
 class Header extends Component {

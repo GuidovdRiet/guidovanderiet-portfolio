@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const BrandWrapper = styled.div`
   & > * {
-      color: ${props => props.theme.colorLightGray};
+      color: ${props => props.theme.colorMediumGray};
       font-size: 1.5em;
-      border: 1px solid ${props => props.theme.colorLightGray};
+      border: 1px solid ${props => props.theme.colorMediumGray};
       margin-bottom: 9px;
   }
 `;

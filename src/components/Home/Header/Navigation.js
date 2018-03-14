@@ -18,7 +18,7 @@ const SocialIconWrapper = styled.ul`
 
 const Icon = styled.li`
     > * {
-        fill: #C7C7C7;
+        fill: ${props => props.theme.colorMediumGray};
     }
 `
 
