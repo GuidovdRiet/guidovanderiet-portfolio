@@ -26,6 +26,12 @@ const BrandMiddle = styled.h1`
   padding: 5px 0px 5px 10px;
   width: 74px;
   margin-right: 10px;
+  &.active {
+    width: 41px;
+     & > * {
+         display: none;
+     }
+  }
 `;
 
 const BrandBottom = styled.h1`
@@ -43,7 +49,7 @@ class Logo extends Component {
     return (
       <BrandWrapper innerRef={brand => (this.logo = brand)} className={navScrollLimit && 'active'}>
         <BrandTop className={navScrollLimit && 'active'} >Guido</BrandTop>
-        <BrandMiddle className={navScrollLimit && 'active'}>van de</BrandMiddle>
+        <BrandMiddle className={navScrollLimit && 'active'}>v<span className={navScrollLimit && 'active'}>an </span>d<span className={navScrollLimit && 'active'}>e</span></BrandMiddle>
         <BrandBottom>Riet</BrandBottom>
       </BrandWrapper>
     );
