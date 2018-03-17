@@ -13,7 +13,7 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 300px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     @media (max-width: 1100px) {
       width: 45%;
       margin-bottom: 60px;
@@ -40,28 +40,12 @@ const CardImage = styled.img`
 `;
 
 const CardTitle = styled.h3`
-    margin-top: 25px;
+    margin-top: 10px;
 `;
 
 const CardText = styled.p`
     color: ${props => props.theme.colorLightGray};
-    line-height: 20px;
-    text-align: justify;
-`;
-
-const CardLogoWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-`;
-
-const CardLogo = styled.div`
-    width: 45px;
-    height: 25px;
-    background: url(${BuildingsOfRdamLogo});
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    line-height: 19px;
 `;
 
 class WorkCard extends Component {
@@ -73,13 +57,8 @@ class WorkCard extends Component {
           <CardTitle>Buildings of Rotterdam</CardTitle>
           <CardText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec
-            orci dignissim, auctor arcu sit amet, condimentum ipsum. Donec finibus
-            vulputate felis, et sollicitudin purus pharetra vitae. Vivamus
-            lobortis felis a sapien vestibulum euismod.
+            orci dignissim, auctor arcu sit amet.
           </CardText>
-          <CardLogoWrapper>
-            <CardLogo></CardLogo>
-          </CardLogoWrapper>
         </CardTextWrapper>
       </Card>
     )
