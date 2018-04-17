@@ -18,7 +18,6 @@ const ContentWrapper = styled.div`
   max-width: 2052px;
 `;
 
-
 const IndexPage = () => (
   <div>
     <Header />

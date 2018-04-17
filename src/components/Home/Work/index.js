@@ -7,6 +7,7 @@ const WorkSection = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: ${props => props.theme.colorMain};
 `;
 
 const SectionTitleWrapper = styled.div`

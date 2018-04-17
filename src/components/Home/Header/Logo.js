@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const BrandWrapper = styled.div`
   transition: all .3s cubic-bezier(.25,.75,.5,1.25);
+  width: 10%;
   & > * {
     color: ${props => props.theme.colorMediumGray};
     font-size: 1.5em;
@@ -10,7 +11,7 @@ const BrandWrapper = styled.div`
     margin-bottom: 9px;
   }
   &.active {
-      transform: translate3d(120px, 0, 0);
+      transform: translate3d(80%, 0, 0);
       display: flex;
   }
 `;
