@@ -13,7 +13,7 @@ const Card = styled.div`
   align-items: center;
   padding: 30px 0 30px 0;
   color: ${props => props.theme.colorWhite};
-  @media (max-width: 1100px) {
+  @media (max-width: 1400px) {
     width: 45%;
     margin-bottom: 60px;
   }
@@ -30,6 +30,8 @@ const CardTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 80%;
+  max-width: 250px;
+  margin-top: 15px;
 `;
 
 const CardImageWrapper = styled.div`
@@ -39,10 +41,11 @@ const CardImageWrapper = styled.div`
 `;
 
 const CardImage = styled.div`
-  width: 200px;
+  width: 182px;
   height: 120px;
   background: url(${props => props.background});
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 `;
 

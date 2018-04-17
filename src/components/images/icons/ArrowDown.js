@@ -22,7 +22,7 @@ const PathTop = styled.path`
 
 const PathMiddle = styled.path`
   fill: #5f75da;
-  opacity: 0.18;
+  opacity: 0.25;
   transform-origin: center;
   animation: rotate 3s linear infinite;
   @keyframes rotate {
@@ -32,7 +32,9 @@ const PathMiddle = styled.path`
   }
 `
 
-const PathBottom = styled(PathMiddle)``
+const PathBottom = styled(PathMiddle)`
+  opacity: 0.2;
+`
 
 const Rect = styled.rect`
   fill: #5f75da;

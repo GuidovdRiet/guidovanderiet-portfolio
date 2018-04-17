@@ -17,7 +17,7 @@ const BrandWrapper = styled.div`
 `;
 
 const Brand = styled.svg`
-  width: 70px;
+  width: 80px;
 `;
 
 const Polygon = styled.polygon`
