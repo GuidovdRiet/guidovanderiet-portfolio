@@ -20,9 +20,9 @@ const ContentWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &.active {
-    width: (82% + 200px);
-    max-width: 2052px;
+    margin-top: 10px;
   }
 `;
 
@@ -30,19 +30,19 @@ const SocialIconWrapper = styled.ul`
   list-style: none;
   display: flex;
   width: 115px;
-  margin-bottom: 6px;
+  margin: 0 23px 0 0;
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s cubic-bezier(0.25, 0.75, 0.5, 1.25);
   &.active {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-120px, 0, 0);
     width: 135px;
   }
 `;
 
 const Icon = styled.li`
   > * {
-    fill: ${props => props.theme.colorMediumGray};
+    fill: ${props => props.theme.colorLightGray};
   }
 `;
 

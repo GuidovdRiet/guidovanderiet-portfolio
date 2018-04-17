@@ -4,6 +4,12 @@ import styled from "styled-components";
 const ArrowDownIcon = styled.svg`
     width: 48px;
     margin-top: 7px;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 `;
 
 const Polygon = styled.polygon`
@@ -18,7 +24,7 @@ const PathMiddle = styled.path`
   fill: #5f75da;
   opacity: 0.18;
   transform-origin: center;
-  animation: rotate 2s linear infinite;
+  animation: rotate 3s linear infinite;
   @keyframes rotate {
     100% {
       transform: rotate(360deg);
