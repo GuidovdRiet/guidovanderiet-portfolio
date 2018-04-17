@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Header from '../components/Home/Header';
 import Work from '../components/Home/Work';
+import Resume from '../components/Home/Resume';
 
 const ContentContainer = styled.div`
   width: 100%;
@@ -24,6 +25,7 @@ const IndexPage = () => (
     <ContentContainer>
       <ContentWrapper>
         <Work />
+        <Resume />
       </ContentWrapper>
     </ContentContainer>
   </div>

@@ -4,12 +4,11 @@ import styled from "styled-components";
 const Nav = styled.nav`
   display: flex;
   justify-content: center;
-  padding: 30px 30px 0 30px;
   transition: position 0.3s ease-in-out;
   width: 100%;
   z-index: 9999;
   &.active {
-    background: rgba(0, 0, 0, 0.9);
+    background: ${props => props.theme.colorMain};
     top: 0;
     width: 100%;
     height: 50px;

@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import styled from 'styled-components';
 
 // Icons
-import BuildingsOfRdamIcon from '../../images/icons/work-card-icons/plus_icon.svg';
-import BuildingsOfRdamLogo from '../../images/icons/project-logos/buildings-of-rotterdam-logo.svg';
+import BuildingsOfRdamIcon from '../../images/icons/work-card-icons/breakout_icon.svg';
 
 const Card = styled.div`
     box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.1);
@@ -12,8 +11,6 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 300px;
-    /* padding-bottom: 50px; */
     @media (max-width: 1100px) {
       width: 45%;
       margin-bottom: 60px;
@@ -28,31 +25,45 @@ const Card = styled.div`
 
 const CardTextWrapper = styled.div`
     width: 74%;
+    margin: 20px 0;
 `;
 
-const CardImage = styled.img`
+
+const CardImageWrapper = styled.div`
+    background: #7085DE;
     width: 100%;
     height: 200px;
-    background: linear-gradient(rgba(95, 117, 221, 0.9), rgba(95, 117, 221, 0.9)), url(${BuildingsOfRdamIcon});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const CardImage = styled.div`
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    background: url(${BuildingsOfRdamIcon});
     background-repeat: no-repeat;
-    background-position: center;
-    color: ${props => props.theme.colorMain};
+    background-size: cover;
 `;
 
 const CardTitle = styled.h3`
-    margin-top: 10px;
+    margin-top: 30px;
 `;
 
 const CardText = styled.p`
     color: ${props => props.theme.colorLightGray};
-    line-height: 19px;
+    line-height: 20px;
+    font-size: 1.27em;
 `;
 
 class WorkCard extends Component {
   render() {
     return (
       <Card>
-        <CardImage />
+        <CardImageWrapper>
+          <CardImage />
+        </CardImageWrapper>
         <CardTextWrapper>
           <CardTitle>Buildings of Rotterdam</CardTitle>
           <CardText>

@@ -5,7 +5,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 // Icons
-import Arrow from "../../images/icons/Arrow.js";
+import Arrow from "../../images/icons/ArrowDown.js";
 import background from "../../images/header-background.svg";
 
 // particles
@@ -46,24 +46,19 @@ const ContentTop = styled.div`
   & > h1 {
     color: ${props => props.theme.colorWhite};
     margin: 0 0 30px -6px;
+    text-align: center;
   }
 `;
 
 const ContentBottom = styled.div`
   display: flex;
   text-align: justify;
+  flex-direction: column;
+  last-word: center;
   & > p {
-    margin-right: 40px;
-    width: 290px;
+    text-align-last: center; 
     color: ${props => props.theme.colorLightGray};
-    font-size: 1.3em;
-    line-height: 23px;
   }
-`;
-
-const ArrowContainer = styled.div`
-  display: flex;
-  align-items: flex-end;
 `;
 
 class Header extends Component {
@@ -90,9 +85,7 @@ class Header extends Component {
                   zijn studie Media technologie aan de Hogeschool van Rotterdam
                   wil hij de samenwerking aangaan tussen designer en developer.
                 </p>
-                <ArrowContainer>
-                  <Arrow />
-                </ArrowContainer>
+                <Arrow />
               </ContentBottom>
             </Content>
           </ContentWrapper>

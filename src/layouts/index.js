@@ -9,7 +9,6 @@ import Navigation from "../components/Home/Header/Navigation";
 injectGlobal`
     * {
         box-sizing: border-box;
-        font-family: 'karla';
     }
     body {
         margin: 0;
@@ -30,23 +29,31 @@ injectGlobal`
         font-size: 3.4em;
         font-weight: 700;
         margin-bottom: 10px;
+        font-family: 'Montserrat';
     }
     h2 {
         font-size: 2.2em;
         margin-top: 8px;
     }
     p {
-        font-size: 1.45em;
+        font-size: 1.27em;
+        font-family: 'Karla';
     }
 `;
 
 const theme = {
-  colorMain: '#061616',
-  colorSecundary: 'rgb(95, 117, 221)',
+  colorMain: '#2A2A31',
+  colorMainLight: '#2E2E35',
+  colorMainDark: '#24242B',
+  colorPurple: '#6078D7',
+  colorYellow: '#E3AA3B',
+  colorPink: '#E4248B',
+  colorBlue: '2BF8F7',
+  colorGreen: '2AFD74',
   colorWhite: '#fff',
-  colorLightGray: '#C7C7C7',
-  colorMediumGray: '#323333',
-  colorDarkGray: '#181E1E',
+  colorLightGray: '#949498',
+  colorMediumGray: '3E3E42',
+  colorDarkGray: '#2F2F35',
 };
 
 const TemplateWrapper = ({ children }) => (
