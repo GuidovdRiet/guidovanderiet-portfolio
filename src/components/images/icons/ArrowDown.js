@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const ArrowDownIcon = styled.svg`
-    width: 50px;
+    width: 48px;
+    margin-top: 7px;
 `;
 
 const Polygon = styled.polygon`
@@ -16,12 +17,16 @@ const PathTop = styled.path`
 const PathMiddle = styled.path`
   fill: #5f75da;
   opacity: 0.18;
+  transform-origin: center;
+  animation: rotate 2s linear infinite;
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `
 
-const PathBottom = styled.path`
-  fill: #5f75da;
-  opacity: 0.18;
-`
+const PathBottom = styled(PathMiddle)``
 
 const Rect = styled.rect`
   fill: #5f75da;

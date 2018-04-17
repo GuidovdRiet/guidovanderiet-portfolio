@@ -30,16 +30,16 @@ const Canvas = styled.canvas`
 `;
 
 const ContentWrapper = styled.div`
-  flex: 1;
   display: flex;
   justify-content: center;
-  margin: 70px 10% 0 10%;
+  height: 100%;
 `;
 
 const Content = styled.div`
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 `;
 
 const ContentTop = styled.div`
@@ -54,9 +54,11 @@ const ContentBottom = styled.div`
   display: flex;
   text-align: justify;
   flex-direction: column;
+  align-items: center;
   last-word: center;
   & > p {
     text-align-last: center; 
+    padding: 0 80px;
     color: ${props => props.theme.colorLightGray};
   }
 `;
