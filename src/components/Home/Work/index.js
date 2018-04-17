@@ -1,26 +1,24 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import WorkCard from "./WorkCard";
+import WorkCard from './WorkCard';
+import ArrowAngle from '../../images/icons/ArrowAngle';
 
 const WorkSection = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: ${props => props.theme.colorMain};
 `;
 
 const SectionTitleWrapper = styled.div`
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     margin-bottom: 80px;
 `;
 
 const SectionTitle = styled.h1`
   color: ${props => props.theme.colorWhite};
-  background: #000;
-  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
-  padding: 10px 18px 10px 18px;
 `;
 
 const CardWrapper = styled.div`
@@ -39,7 +37,8 @@ class Work extends Component {
     return (
       <WorkSection>
         <SectionTitleWrapper>
-            <SectionTitle>Work</SectionTitle>
+            <SectionTitle>work</SectionTitle>
+            <ArrowAngle />
         </SectionTitleWrapper>
         <CardWrapper>
           <WorkCard />

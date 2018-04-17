@@ -15,9 +15,11 @@ injectGlobal`
         padding: 0;
         font-size: 62.5%;
         margin: 0;
+        background: #2A2A31;
         //-webkit-text-stroke-width: .05px;
         //-webkit-text-stroke-color: white;
         -webkit-font-smoothing: antialiased;
+        font-family: 'Karla';
     }
     a {
         text-decoration: none;
@@ -34,6 +36,7 @@ injectGlobal`
     h2 {
         font-size: 2.2em;
         margin-top: 8px;
+        font-family: 'Montserrat';
     }
     p {
         font-size: 1.27em;

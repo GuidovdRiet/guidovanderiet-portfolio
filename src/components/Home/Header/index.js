@@ -55,7 +55,7 @@ const ContentBottom = styled.div`
   text-align: justify;
   flex-direction: column;
   align-items: center;
-  last-word: center;
+  last-word : center;
   & > p {
     text-align-last: center; 
     padding: 0 80px;
@@ -76,7 +76,7 @@ class Header extends Component {
           <ContentWrapper>
             <Content>
               <ContentTop>
-                <h1>Who, What, Where?</h1>
+                <h1>who, what, where?</h1>
               </ContentTop>
               <ContentBottom>
                 <p>

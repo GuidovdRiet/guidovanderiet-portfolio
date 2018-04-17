@@ -8,7 +8,6 @@ const Nav = styled.nav`
   width: 100%;
   z-index: 9999;
   &.active {
-    background: ${props => props.theme.colorMain};
     top: 0;
     width: 100%;
     height: 50px;

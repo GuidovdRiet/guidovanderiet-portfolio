@@ -2,15 +2,18 @@ import React, { Component } from "react";
 import styled from 'styled-components';
 
 // Icons
-import BuildingsOfRdamIcon from '../../images/icons/work-card-icons/breakout_icon.svg';
+import breakOutCardImage from '../../images/icons/work-card-icons/breakout_icon.svg';
+import ArrowRight from '../../images/icons/ArrowRight';
 
 const Card = styled.div`
-    box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.1);
-    background: ${props => props.theme.colorWhite};
+    box-shadow: 0px 0px 50px 6px rgba(25,25,31,0.69);
+    background: ${props => props.theme.colorMain};
     width: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 0 30px 0;
+    color: ${props => props.theme.colorWhite};
     @media (max-width: 1100px) {
       width: 45%;
       margin-bottom: 60px;
@@ -24,37 +27,39 @@ const Card = styled.div`
 `;
 
 const CardTextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 74%;
-    margin: 20px 0;
+    margin-bottom: 10px;
 `;
 
 
 const CardImageWrapper = styled.div`
-    background: #7085DE;
-    width: 100%;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 
 const CardImage = styled.div`
-    width: 120px;
+    width: 200px;
     height: 120px;
-    margin: 0;
-    background: url(${BuildingsOfRdamIcon});
+    background: url(${breakOutCardImage});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 `;
 
 const CardTitle = styled.h3`
     margin-top: 30px;
+    text-align: center;
 `;
 
 const CardText = styled.p`
     color: ${props => props.theme.colorLightGray};
     line-height: 20px;
     font-size: 1.27em;
+    text-align: justify;
+    text-align-last: center;
 `;
 
 class WorkCard extends Component {
@@ -70,6 +75,7 @@ class WorkCard extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec
             orci dignissim, auctor arcu sit amet.
           </CardText>
+          <ArrowRight/>
         </CardTextWrapper>
       </Card>
     )
