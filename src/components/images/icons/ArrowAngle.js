@@ -6,7 +6,7 @@ const ArrowAngleIcon = styled.svg`
     height: 22px;
     margin: 14px 0 0 20px;
     > * {
-        fill: ${props => props.theme.colorLightGray};
+        fill: ${props => props.theme.colorBorderMain};
     }
 `;
 

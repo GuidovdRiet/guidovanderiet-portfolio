@@ -38,6 +38,10 @@ injectGlobal`
         margin-top: 8px;
         font-family: 'Montserrat';
     }
+    h3 {
+      font-size: 1.4em;
+      font-family: 'Karla';
+    }
     p {
         font-size: 1.27em;
         font-family: 'Karla';
@@ -57,6 +61,7 @@ const theme = {
   colorLightGray: '#949498',
   colorMediumGray: '3E3E42',
   colorDarkGray: '#2F2F35',
+  colorBorderMain: 'rgba(148, 148, 152, 0.3)'
 };
 
 const TemplateWrapper = ({ children }) => (

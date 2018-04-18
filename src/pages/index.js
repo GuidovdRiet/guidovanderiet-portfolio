@@ -6,7 +6,7 @@ import Header from '../components/Home/Header';
 import Work from '../components/Home/Work';
 import Resume from '../components/Home/Resume';
 
-const ContentContainer = styled.div`
+const ContentContainerSpacing = styled.div`
   width: 100%;
   margin-top: 100px;
   display: flex;
@@ -21,12 +21,12 @@ const ContentWrapper = styled.div`
 const IndexPage = () => (
   <div>
     <Header />
-    <ContentContainer>
+    <ContentContainerSpacing>
       <ContentWrapper>
         <Work />
-        <Resume />
       </ContentWrapper>
-    </ContentContainer>
+    </ContentContainerSpacing>
+    <Resume />
   </div>
 )
 

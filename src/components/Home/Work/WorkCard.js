@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 // Icons
-import ArrowRight from "../../images/icons/ArrowRight";
+import ArrowRightCircle from "../../images/icons/ArrowRightCircle";
 
 const Card = styled.div`
   box-shadow: 0px 0px 50px 6px rgba(25, 25, 31, 0.69);
@@ -79,7 +79,7 @@ class WorkCard extends Component {
         <CardTextWrapper>
           <CardTitle>{this.state.title}</CardTitle>
           <CardText>{this.state.text}</CardText>
-          <ArrowRight />
+          <ArrowRightCircle />
         </CardTextWrapper>
       </Card>
     );

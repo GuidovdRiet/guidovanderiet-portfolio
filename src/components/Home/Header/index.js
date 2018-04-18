@@ -5,7 +5,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 // Icons
-import Arrow from "../../images/icons/ArrowDown.js";
+import ArrowDownCircle from "../../images/icons/ArrowDownCircle.js";
 import background from "../../images/header-background.svg";
 
 // particles
@@ -87,7 +87,7 @@ class Header extends Component {
                   zijn studie Media technologie aan de Hogeschool van Rotterdam
                   wil hij de samenwerking aangaan tussen designer en developer.
                 </p>
-                <Arrow />
+                <ArrowDownCircle />
               </ContentBottom>
             </Content>
           </ContentWrapper>
