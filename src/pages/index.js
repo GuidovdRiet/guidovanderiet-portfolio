@@ -6,6 +6,7 @@ import Header from "../components/Home/Header";
 import Work from "../components/Home/Work";
 import Jobs from "../components/Home/Jobs";
 import Degrees from '../components/Home/Degrees'
+import Skills from '../components/Home/Skills'
 
 const ContentContainerSpacing = styled.div`
   width: 100%;
@@ -29,6 +30,7 @@ const IndexPage = () => (
     </ContentContainerSpacing>
     <Jobs />
     <Degrees />
+    <Skills />
   </div>
 );
 

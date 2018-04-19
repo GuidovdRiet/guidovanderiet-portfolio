@@ -28,7 +28,8 @@ const Job = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 400px;
+  height: 500px;
+  max-height: 500px;
   &:nth-child(1) {
     background: ${props => props.theme.colorMainDark};
   }
@@ -46,6 +47,8 @@ const TextWrapper = styled.div`
   }
   > p {
     color: ${props => props.theme.colorLightGray};
+    max-width: 340px;
+    text-align: justify;
   }
 `;
 

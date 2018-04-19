@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import backgroundPattern from "../../images/degree-background-pattern.svg";
 
-const ContentWrapper = styled.div`
+const DegreeSection = styled.section`
   background-image: linear-gradient(rgba(42, 42, 49, 0.92), rgba(42, 42, 49, 0.92)), url(${backgroundPattern});
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,9 +19,9 @@ const ContentWrapper = styled.div`
 class Degree extends Component {
   render() {
     return (
-      <ContentWrapper>
+      <DegreeSection>
         <h1>" In 2016 I earned a degree in graphic design. "</h1>
-      </ContentWrapper>
+      </DegreeSection>
     );
   }
 }
