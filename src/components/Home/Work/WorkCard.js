@@ -34,11 +34,7 @@ const CardTextWrapper = styled.div`
   margin-top: 15px;
 `;
 
-const CardImageWrapper = styled.div`
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-`;
+const CardImageWrapper = styled.div``;
 
 const CardImage = styled.div`
   width: 182px;
@@ -75,7 +71,9 @@ class WorkCard extends Component {
   render() {
     return (
       <Card>
-        <CardImageWrapper><CardImage background={this.state.backgroundImage} /></CardImageWrapper>
+        <CardImageWrapper>
+          <CardImage background={this.state.backgroundImage} />
+        </CardImageWrapper>
         <CardTextWrapper>
           <CardTitle>{this.state.title}</CardTitle>
           <CardText>{this.state.text}</CardText>

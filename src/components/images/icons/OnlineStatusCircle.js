@@ -5,7 +5,7 @@ const OnlineStatusCircleIcon = styled.svg`
   min-width: 12px;
   max-width: 12px;
   height: 12px;
-  margin-top: 19px;
+  margin-top: 37px;
 `;
 
 const Circle = styled.circle`

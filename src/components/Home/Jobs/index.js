@@ -57,7 +57,7 @@ const JobTitleWrapper = styled.div`
 `;
 
 const JobTitle = styled.h1`
-  margin: 0 0 22px 40px;
+  margin: 20px 0 22px 40px;
   color: ${props => props.theme.colorWhite};
 `;
 
