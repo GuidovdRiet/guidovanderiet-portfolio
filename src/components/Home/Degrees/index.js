@@ -5,6 +5,8 @@ import backgroundPattern from "../../images/degree-background-pattern.svg";
 
 const ContentWrapper = styled.div`
   background-image: linear-gradient(rgba(42, 42, 49, 0.92), rgba(42, 42, 49, 0.92)), url(${backgroundPattern});
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 350px;
   max-height: 350px;
