@@ -23,7 +23,6 @@ const SectionTitleWrapper = styled.div`
 `;
 
 const SectionTitle = styled.h1`
-  color: ${props => props.theme.colorWhite};
 `;
 
 const CardWrapper = styled.div`

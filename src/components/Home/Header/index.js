@@ -44,7 +44,6 @@ const Content = styled.div`
 
 const ContentTop = styled.div`
   & > h1 {
-    color: ${props => props.theme.colorWhite};
     margin: 0 0 30px -6px;
     text-align: center;
   }

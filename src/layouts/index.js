@@ -31,6 +31,7 @@ injectGlobal`
         font-size: 3.6em;
         font-weight: 700;
         margin-bottom: 10px;
+        color: #fff;
         font-family: 'Montserrat';
     }
     h2 {

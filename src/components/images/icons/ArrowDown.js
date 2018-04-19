@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const ArrowDownIcon = styled.svg`
   width: 12px;
+  margin-top: 15px;
   > * {
     fill: ${props => props.theme.colorBorderMain};
   }

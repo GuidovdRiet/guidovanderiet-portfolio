@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Header from "../components/Home/Header";
 import Work from "../components/Home/Work";
 import Jobs from "../components/Home/Jobs";
+import Degrees from '../components/Home/Degrees'
 
 const ContentContainerSpacing = styled.div`
   width: 100%;
@@ -27,6 +28,7 @@ const IndexPage = () => (
       </ContentWrapper>
     </ContentContainerSpacing>
     <Jobs />
+    <Degrees />
   </div>
 );
 

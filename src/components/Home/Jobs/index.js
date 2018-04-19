@@ -16,7 +16,6 @@ const SectionTitleWrapper = styled.div`
 `;
 
 const SectionTitle = styled.h1`
-  color: ${props => props.theme.colorWhite};
   padding: 5px 18px 10px 18px;
 `;
 
@@ -58,7 +57,6 @@ const JobTitleWrapper = styled.div`
 
 const JobTitle = styled.h1`
   margin: 20px 0 22px 40px;
-  color: ${props => props.theme.colorWhite};
 `;
 
 class Jobs extends Component {

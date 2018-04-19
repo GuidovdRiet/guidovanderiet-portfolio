@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const OnlineStatusCircleIcon = styled.svg`
-  min-width: 12px;
   max-width: 12px;
+  min-width: 12px;
   height: 12px;
   margin-top: 37px;
 `;
