@@ -39,7 +39,11 @@ injectGlobal`
         font-family: 'Montserrat';
     }
     h3 {
-      font-size: 1.4em;
+      font-size: 2.5em;
+      font-family: 'Montserrat';
+    }
+    h4 {
+      font-size: 2.4em;
       font-family: 'Karla';
     }
     p {
@@ -55,8 +59,8 @@ const theme = {
   colorPurple: '#6078D7',
   colorYellow: '#E3AA3B',
   colorPink: '#E4248B',
-  colorBlue: '2BF8F7',
-  colorGreen: '2AFD74',
+  colorBlue: '#2BF8F7',
+  colorGreen: '#2AFD74',
   colorWhite: '#fff',
   colorLightGray: '#949498',
   colorMediumGray: '3E3E42',

@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components';
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
 
-import Header from '../components/Home/Header';
-import Work from '../components/Home/Work';
-import Resume from '../components/Home/Resume';
+import Header from "../components/Home/Header";
+import Work from "../components/Home/Work";
+import Jobs from "../components/Home/Jobs";
 
 const ContentContainerSpacing = styled.div`
   width: 100%;
@@ -26,8 +26,8 @@ const IndexPage = () => (
         <Work />
       </ContentWrapper>
     </ContentContainerSpacing>
-    <Resume />
+    <Jobs />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

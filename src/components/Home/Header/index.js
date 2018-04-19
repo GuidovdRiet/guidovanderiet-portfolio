@@ -14,7 +14,7 @@ import { particleInstance, particleSettings } from "../../../utils/particles/";
 const Head = styled.header`
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: bottom;
   width: 100%;
   height: 85vh;
@@ -55,9 +55,9 @@ const ContentBottom = styled.div`
   text-align: justify;
   flex-direction: column;
   align-items: center;
-  last-word : center;
+  last-word: center;
   & > p {
-    text-align-last: center; 
+    text-align-last: center;
     padding: 0 80px;
     color: ${props => props.theme.colorLightGray};
   }
@@ -72,26 +72,26 @@ class Header extends Component {
   render() {
     return (
       <Head>
-          <Navigation />
-          <ContentWrapper>
-            <Content>
-              <ContentTop>
-                <h1>who, what, where?</h1>
-              </ContentTop>
-              <ContentBottom>
-                <p>
-                  Creativiteit, onverwachte invalshoeken en humor typeren het werk
-                  van Guido van de Riet. Nadat hij zijn studie Grafisch Vormgever
-                  succesvol had afgerond, besloot hij zijn blikveld te verruimen
-                  en zich te verdiepen in de technische kanten van het vak. Met
-                  zijn studie Media technologie aan de Hogeschool van Rotterdam
-                  wil hij de samenwerking aangaan tussen designer en developer.
-                </p>
-                <ArrowDownCircle />
-              </ContentBottom>
-            </Content>
-          </ContentWrapper>
-          <Canvas ref={canvas => (this.canvas = canvas)}></Canvas>            
+        <Navigation />
+        <ContentWrapper>
+          <Content>
+            <ContentTop>
+              <h1>who, what, where?</h1>
+            </ContentTop>
+            <ContentBottom>
+              <p>
+                Creativiteit, onverwachte invalshoeken en humor typeren het werk
+                van Guido van de Riet. Nadat hij zijn studie Grafisch Vormgever
+                succesvol had afgerond, besloot hij zijn blikveld te verruimen
+                en zich te verdiepen in de technische kanten van het vak. Met
+                zijn studie Media technologie aan de Hogeschool van Rotterdam
+                wil hij de samenwerking aangaan tussen designer en developer.
+              </p>
+              <ArrowDownCircle />
+            </ContentBottom>
+          </Content>
+        </ContentWrapper>
+        <Canvas ref={canvas => (this.canvas = canvas)} />
       </Head>
     );
   }
