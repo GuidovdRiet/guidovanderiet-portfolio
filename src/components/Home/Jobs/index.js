@@ -42,12 +42,12 @@ const TextWrapper = styled.div`
   width: 80%;
   max-width: 420px;
   padding: 80px 0;
+  max-width: 340px;
   > h4 {
     color: ${props => props.theme.colorGreen};
   }
   > p {
     color: ${props => props.theme.colorLightGray};
-    max-width: 340px;
     text-align: justify;
   }
 `;

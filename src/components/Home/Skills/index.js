@@ -4,8 +4,8 @@ import styled from "styled-components";
 import ArrowRight from "../../images/icons/ArrowRight";
 
 const SkillSection = styled.section`
-  height: 500px;
-  max-height: 500px;
+  height: 550px;
+  max-height: 550px;
   display: flex;
 `;
 
@@ -35,9 +35,9 @@ const SkillsSectionWrapper = styled.div`
         color: ${props => props.theme.colorYellow};
     }
     > h1 {
-      font-family: 'Karla';
       font-weight: 700;
       letter-spacing: 0;
+      font-size: 2.6em;
       color: ${props => props.theme.colorLightGray};
     }
 `;
