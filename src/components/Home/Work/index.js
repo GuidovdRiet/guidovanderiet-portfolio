@@ -45,7 +45,7 @@ class Work extends Component {
             <ArrowAngle />
         </SectionTitleWrapper>
         <CardWrapper>
-          <WorkCard backgroundImage={buildingCardLogo} title={'Buildings of rotterdam'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros mauris, sagittis eget augue eu, laoreet facilisis lacus. Sed a nisi placerat, ullamcorper tortor id.'}/>
+          <WorkCard backgroundImage={buildingCardLogo} title={'Buildings of Rotterdam'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros mauris, sagittis eget augue eu, laoreet facilisis lacus. Sed a nisi placerat, ullamcorper tortor id.'}/>
           <WorkCard backgroundImage={figmentCardLogo} title={'Figment'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros mauris, sagittis eget augue eu, laoreet facilisis lacus. Sed a nisi placerat, ullamcorper tortor id.'}/>
           <WorkCard backgroundImage={breakOutCardLogo} title={'Break out'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros mauris, sagittis eget augue eu, laoreet facilisis lacus. Sed a nisi placerat, ullamcorper tortor id.'}/>
           <WorkCard backgroundImage={portfolioCardLogo} title={'Portfolio'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros mauris, sagittis eget augue eu, laoreet facilisis lacus. Sed a nisi placerat, ullamcorper tortor id.'}/>
