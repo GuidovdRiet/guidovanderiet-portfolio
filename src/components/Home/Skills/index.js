@@ -4,8 +4,7 @@ import styled from "styled-components";
 import ArrowRight from "../../images/icons/ArrowRight";
 
 const SkillSection = styled.section`
-  height: 550px;
-  max-height: 550px;
+  height: 100vh;
   display: flex;
 `;
 
