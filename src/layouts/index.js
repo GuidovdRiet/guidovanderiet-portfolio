@@ -28,7 +28,7 @@ injectGlobal`
       padding: 0;
     }
     h1 {
-        font-size: 3.6em;
+        font-size: 3em;
         font-weight: 700;
         margin-bottom: 10px;
         color: #fff;

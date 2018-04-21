@@ -4,7 +4,7 @@ import styled from "styled-components";
 import backgroundPattern from "../../images/degree-background-pattern.svg";
 
 const DegreeSection = styled.section`
-  background-image: linear-gradient(rgba(42, 42, 49, 0.92), rgba(42, 42, 49, 0.92)), url(${backgroundPattern});
+  background-image: linear-gradient(rgba(42, 42, 49, 0.6), rgba(42, 42, 49, 0.95)), url(${backgroundPattern});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,6 +14,9 @@ const DegreeSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  > h1 {
+    margin: 0;
+  }
 `;
 
 class Degree extends Component {

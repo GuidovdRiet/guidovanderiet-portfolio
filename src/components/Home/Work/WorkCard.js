@@ -11,6 +11,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding: 30px 0 30px 0;
   color: ${props => props.theme.colorWhite};
   @media (max-width: 1400px) {
@@ -32,6 +33,7 @@ const CardTextWrapper = styled.div`
   width: 80%;
   max-width: 250px;
   margin-top: 15px;
+  flex-grow: 1;
 `;
 
 const CardImageWrapper = styled.div``;
@@ -46,7 +48,6 @@ const CardImage = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  margin-top: 25px;
   text-align: center;
 `;
 
@@ -56,6 +57,13 @@ const CardText = styled.p`
   font-size: 1.27em;
   text-align: justify;
   text-align-last: center;
+`;
+
+const ArrowRightCircleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
 `;
 
 class WorkCard extends Component {
@@ -77,8 +85,10 @@ class WorkCard extends Component {
         <CardTextWrapper>
           <CardTitle>{this.state.title}</CardTitle>
           <CardText>{this.state.text}</CardText>
-          <ArrowRightCircle />
         </CardTextWrapper>
+        <ArrowRightCircleWrapper>
+          <ArrowRightCircle />
+        </ArrowRightCircleWrapper>
       </Card>
     );
   }
