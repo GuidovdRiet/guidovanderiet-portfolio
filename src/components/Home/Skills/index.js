@@ -10,36 +10,38 @@ const SkillSection = styled.section`
 `;
 
 const TitleWrapper = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const ArrowRightWrapper = styled.div`
+const TitleContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 `;
 
 const SkillsWrapper = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const SkillsSectionWrapper = styled.div`
-    &:first-child {
-        margin-bottom: 80px;
-    }
-    > h4 {
-        color: ${props => props.theme.colorYellow};
-    }
-    > h1 {
-      font-weight: 700;
-      letter-spacing: 0;
-      font-size: 2.6em;
-      color: ${props => props.theme.colorLightGray};
-    }
+  &:first-child {
+    margin-bottom: 80px;
+  }
+  > h4 {
+    color: ${props => props.theme.colorYellow};
+  }
+  > h1 {
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 2.6em;
+    color: ${props => props.theme.colorLightGray};
+  }
 `;
 
 class Skills extends Component {
@@ -47,10 +49,10 @@ class Skills extends Component {
     return (
       <SkillSection>
         <TitleWrapper>
-          <h1>Technical Skills</h1>
-          <ArrowRightWrapper>
+          <TitleContent>
+            <h1>Technical Skills</h1>
             <ArrowRight />
-          </ArrowRightWrapper>
+          </TitleContent>
         </TitleWrapper>
         <SkillsWrapper>
           <SkillsSectionWrapper>

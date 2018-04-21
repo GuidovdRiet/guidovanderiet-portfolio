@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ArrowRightIcon = styled.svg`
   width: 30px;
   margin-top: 15px;
-  fill: ${props => props.theme.colorLightGray};
+  fill: ${props => props.theme.colorBorderMain};
 `;
 
 const ArrowRight = () => 
