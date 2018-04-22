@@ -8,7 +8,15 @@ const ContactSection = styled.section`
   background: ${props => props.theme.colorYellow};
 `;
 
-const ContactImageWrapper = styled.div`
+const ContactTextWrapper = styled.div`
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  > h3 {
+    margin-bottom: 10px;
+  }
 `;
 
 const ContactImage = styled.div`
@@ -19,9 +27,10 @@ class Contact extends Component {
   render() {
     return (
       <ContactSection>
-        <ContactImageWrapper>
-          <ContactImage />
-        </ContactImageWrapper>
+        <ContactTextWrapper>
+          <h3>Hit me up.</h3>
+          <h1>guidovdriet@gmail.com</h1>
+        </ContactTextWrapper>
       </ContactSection>
     );
   }
