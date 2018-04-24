@@ -38,6 +38,7 @@ const ContentWrapper = styled.div`
 
 const Content = styled.div`
   max-width: 500px;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   margin-top: 100px;

@@ -10,7 +10,6 @@ const BrandWrapper = styled.div`
     color: ${props => props.theme.colorMediumGray};
     font-size: 1.5em;
     border: 1px solid ${props => props.theme.colorMediumGray};
-    margin-bottom: 9px;
   }
   &.active {
     transform: translate3d(80%, 0, 0);
@@ -20,6 +19,11 @@ const BrandWrapper = styled.div`
 
 const Brand = styled.svg`
   width: 80px;
+  &:hover {
+    > path {
+      stroke: #6882E0;
+    }
+  }
 `;
 
 const Polygon = styled.polygon`
@@ -31,7 +35,7 @@ const Polygon = styled.polygon`
 
 const Path = styled.path`
   fill: none;
-  stroke: #5f75da;
+  stroke: ${props => props.theme.colorPurple};
   stroke-miterlimit: 10;
 `;
 
@@ -44,10 +48,10 @@ class Logo extends Component {
     const { navScrollLimit } = this.props;
     return (
       <BrandWrapper
-          innerRef={brand => (this.logo = brand)}
-          className={navScrollLimit && "active"}
-        >
-        <Link to='/'>
+        innerRef={brand => (this.logo = brand)}
+        className={navScrollLimit && "active"}
+      >
+        <Link to="/">
           <Brand viewBox="0 0 90.41 72.06">
             <Polygon
               className={navScrollLimit && "active"}

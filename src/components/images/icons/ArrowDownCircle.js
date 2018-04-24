@@ -2,13 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 const ArrowDownIcon = styled.svg`
-  width: 48px;
+  width: 68px;
+  padding: 10px;
   margin-top: 7px;
   z-index: 10;
   transition: all 0.2s ease-in-out;
+  transform-origin: center;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.07);
     cursor: pointer;
+    > path,
+      rect,
+      polygon {
+        fill: #6882E0;
+      } 
     > path {
       animation-play-state: running;
     }

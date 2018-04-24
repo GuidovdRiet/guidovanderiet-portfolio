@@ -26,7 +26,7 @@ const settings = {
       }
     },
     opacity: {
-      value: 0.7,
+      value: 0.9,
       random: false,
       anim: {
         enable: false,

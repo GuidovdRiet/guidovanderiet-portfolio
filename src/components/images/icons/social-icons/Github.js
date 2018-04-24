@@ -3,6 +3,12 @@ import styled from "styled-components";
 
 const GitHubIcon = styled.svg`
   width: 19px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    > path {
+      fill: #6882E0;
+    }
+  }
 `;
 
 const Link = styled.a``;
