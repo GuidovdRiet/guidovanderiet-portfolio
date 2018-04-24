@@ -5,7 +5,7 @@ import Link from "gatsby-link";
 const BrandWrapper = styled.div`
   transition: all 0.3s cubic-bezier(0.25, 0.75, 0.5, 1.25);
   width: 10%;
-  z-index:  9999;
+  z-index: 9999;
   & > * {
     color: ${props => props.theme.colorMediumGray};
     font-size: 1.5em;

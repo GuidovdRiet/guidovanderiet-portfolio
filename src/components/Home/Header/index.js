@@ -26,6 +26,7 @@ const Canvas = styled.canvas`
   max-height: 700px;
   position: absolute;
   top: 0;
+  z-index: 0;
   left: 0;
 `;
 

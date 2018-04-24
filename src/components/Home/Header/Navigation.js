@@ -33,6 +33,7 @@ const SocialIconWrapper = styled.ul`
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s cubic-bezier(0.25, 0.75, 0.5, 1.25);
+  z-index: 9999;
   &.active {
     transform: translate3d(-80%, 0, 0);
   }
