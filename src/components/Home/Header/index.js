@@ -55,7 +55,6 @@ const ContentBottom = styled.div`
   text-align: justify;
   flex-direction: column;
   align-items: center;
-  last-word: center;
   & > p {
     text-align-last: center;
     padding: 0 80px;

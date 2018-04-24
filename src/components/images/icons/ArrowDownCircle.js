@@ -7,8 +7,11 @@ const ArrowDownIcon = styled.svg`
   z-index: 10;
   transition: all 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     cursor: pointer;
+    > path {
+      animation-play-state: running;
+    }
   }
 `;
 
@@ -25,6 +28,7 @@ const PathMiddle = styled.path`
   opacity: 0.25;
   transform-origin: center;
   animation: rotate 3s linear infinite;
+  animation-play-state: paused;
   @keyframes rotate {
     100% {
       transform: rotate(360deg);
